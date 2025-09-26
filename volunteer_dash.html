@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Dashboard - Available Pickups</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+
+    <header class="bg-white shadow-lg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/50x50.png?text=V" alt="Volunteer Profile Picture" class="w-12 h-12 rounded-full border-2 border-indigo-200">
+                <div>
+                    <h1 class="text-xl font-bold text-gray-800">Volunteer Name</h1>
+                    <p class="text-sm text-gray-600">Ready to help!</p>
+                </div>
+            </div>
+            <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition duration-200 flex items-center space-x-2">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">Available Pickups Near You</h2>
+            <p class="text-gray-600 text-lg">View the list of donations in need of a volunteer. Click "Volunteer Now" to accept a delivery.</p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 flex items-center">
+                        <i class="fas fa-box text-indigo-500 mr-2"></i>
+                        Surplus Bread Loaves
+                    </h3>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Available</span>
+                </div>
+                <div class="space-y-3 mb-6">
+                    <p class="flex items-center text-gray-700">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-3 w-4"></i>
+                        <span class="font-medium">Pickup:</span>
+                        <span class="ml-2">Goa Bakery, Majorda</span>
+                    </p>
+                    <p class="flex items-center text-gray-700">
+                        <i class="fas fa-clock text-blue-500 mr-3 w-4"></i>
+                        <span class="font-medium">Time:</span>
+                        <span class="ml-2">Today, 5 PM</span>
+                    </p>
+                    <p class="flex items-center text-gray-700">
+                        <i class="fas fa-weight-hanging text-purple-500 mr-3 w-4"></i>
+                        <span class="font-medium">Quantity:</span>
+                        <span class="ml-2">10 kg</span>
+                    </p>
+                    <p class="flex items-center text-gray-700">
+                        <i class="fas fa-hand-holding-heart text-pink-500 mr-3 w-4"></i>
+                        <span class="font-medium">Destination:</span>
+                        <span class="ml-2">Majorda Community Kitchen</span>
+                    </p>
+                    <p class="flex items-start text-gray-700">
+                        <i class="fas fa-info-circle text-yellow-500 mr-3 w-4 mt-1"></i>
+                        <span class="font-medium">Notes:</span>
+                        <span class="ml-2">Easy to carry. No special instructions.</span>
+                    </p>
+                </div>
+                <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-4 rounded-lg font-medium transition duration-200 flex items-center justify-center space-x-2">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Volunteer Now</span>
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800 flex items-center">
+                        <i class="fas fa-box text-indigo-500 mr-2"></i>
+                        Assorted Event Leftovers
+                    </h3>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Available</span>
+                </div>
+                <div class="space-y-3 mb-6">
+                    <p class="flex items-center text-gray-700">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-3 w-4"></i>
+                        <span class="font-medium">Pickup:</span>
+                        <span class="ml-2">Panjim Events Hall</span>
+                    </p>
+                    <p class="flex items-center text-gray-700">
+                        <i class="fas fa-clock text-blue-500 mr-3 w-4"></i>
+                        <span class="font-medium">Time:</span>
+                        <span class="ml-2">Today, 8 PM</span>
+                    </p>
+                    <p class="flex items-center text-gray-700">
+                        <i class="fas fa-weight-hanging text-purple-500 mr-3 w-4"></i>
+                        <span class="font-medium">Quantity:</span>
+                        <span class="ml-2">~25 meals</span>
+                    </p>
+                    <p class="flex items-center text-gray-700">
+                        <i class="fas fa-hand-holding-heart text-pink-500 mr-3 w-4"></i>
+                        <span class="font-medium">Destination:</span>
+                        <span class="ml-2">Panjim Food Bank</span>
+                    </p>
+                    <p class="flex items-start text-gray-700">
+                        <i class="fas fa-info-circle text-yellow-500 mr-3 w-4 mt-1"></i>
+                        <span class="font-medium">Notes:</span>
+                        <span class="ml-2">Must be refrigerated if not delivered quickly.</span>
+                    </p>
+                </div>
+                <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-4 rounded-lg font-medium transition duration-200 flex items-center justify-center space-x-2">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Volunteer Now</span>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

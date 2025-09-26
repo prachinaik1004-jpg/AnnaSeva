@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGOs/Recipient Sign-Up - Annadan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NGOs / Recipient Sign Up</h1>
+        <p class="aim">Sign up to receive food donations for your community.</p>
+        
+        <form>
+            <div style="margin-bottom: 16px;">
+                <label for="ngo-name">Name of Organization:</label>
+                <input type="text" id="ngo-name" name="ngo-name" required>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="contact-name">Contact Person's Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="ngo-type">Type of Organization:</label>
+                <select id="ngo-type" name="ngo-type" required>
+                    <option value="">Select type</option>
+                    <option value="food-bank">Food Bank</option>
+                    <option value="orphanage">Orphanage</option>
+                    <option value="old-age-home">Old Age Home</option>
+                    <option value="community-social-welfare">Community & Social Welfare</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="phone-no">Phone Number:</label>
+                <input type="tel" id="phone-no" name="phone-no" required>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="darpan-id">DARPAN ID:</label>
+                <input type="text" id="darpan-id" name="darpan-id">
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="docs-upload">Upload Documents (e.g., Registration Certificate):</label>
+                <input type="file" id="docs-upload" name="docs-upload" multiple>
+            </div>
+
+            <button type="submit">Register NGO</button>
+        </form>
+    </div>
+</body>
+</html>

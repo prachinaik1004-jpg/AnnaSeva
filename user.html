@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign-Up - Annadan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Individual User Sign Up</h1>
+        <p class="aim">Sign up to donate food from your home.</p>
+        
+        <form>
+            <div style="margin-bottom: 16px;">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="phone-no">Phone Number:</label>
+                <input type="tel" id="phone-no" name="phone-no" required>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <label for="donation-source">Donation Source:</label>
+                <select id="donation-source" name="donation-source" required>
+                    <option value="">Select source</option>
+                    <option value="weddings">Weddings</option>
+                    <option value="parties">Parties</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+                <div id="other-source-box" style="display:none; margin-bottom: 16px;">
+                    <label for="other-source">Please specify:</label>
+                    <input type="text" id="other-source" name="other-source">
+                </div>
+
+            <div class="checkbox-container" style="margin-bottom: 16px;">
+                <input type="checkbox" id="safety-pledge" name="safety-pledge" required>
+                <label for="safety-pledge">I pledge to donate safe, high-quality, and non-expired food.</label>
+            </div>
+
+            <button type="submit">Register as a User</button>
+        </form>
+    </div>
+<script>
+function showOtherBox() {
+    var dropdown = document.getElementById('donation-source');
+    var otherBox = document.getElementById('other-source-box');
+    if (dropdown.value === 'others') {
+        otherBox.style.display = 'block';
+        document.getElementById('other-source').required = true;
+    } else {
+        otherBox.style.display = 'none';
+        document.getElementById('other-source').required = false;
+    }
+}
+</script>
+</body>
+</html>
