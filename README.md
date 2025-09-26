@@ -1,0 +1,1 @@
+For Hackforge 2025, our project, Anna Seva, tackles the critical issue of food waste and hunger in Goa. It's a smart, community-powered platform that connects businesses with surplus food to a tiered network of recipients—from large NGOs to smaller community groups and verified families—all facilitated by a network of dedicated volunteers.
