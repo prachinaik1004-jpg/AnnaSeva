@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Requests - Annadan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-teal-50 to-cyan-100 min-h-screen">
+
+    <header class="bg-white shadow-lg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/40x40.png?text=NGO" alt="Annadan Logo" class="w-10 h-10 rounded-full border-2 border-teal-200">
+                <div>
+                    <h1 class="text-xl font-bold text-gray-800">NGO Requests</h1>
+                    <p class="text-sm text-gray-600">Community Needs</p>
+                </div>
+            </div>
+            <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition duration-200 flex items-center space-x-2">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">Requests from NGOs & Food Banks</h2>
+            <p class="text-gray-600 text-lg">See what your local community needs most and respond to an urgent plea.</p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500 hover:shadow-xl transition duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Majorda Community Kitchen</h3>
+                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium animate-pulse">Urgent</span>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Need 20 kg rice by Friday</h4>
+                    <div class="space-y-2">
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-box text-teal-500 mr-3 w-4"></i>
+                            <span class="font-medium">Quantity & Type:</span>
+                            <span class="ml-2">20 kg / Staples</span>
+                        </p>
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-clock text-red-500 mr-3 w-4"></i>
+                            <span class="font-medium">Urgency:</span>
+                            <span class="ml-2">Deadline by EOD Friday</span>
+                        </p>
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 w-4"></i>
+                            <span class="font-medium">Location:</span>
+                            <span class="ml-2">Majorda, Goa</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex space-x-2">
+                    <a href="tel:0123456789" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 px-3 rounded-lg text-sm font-medium transition duration-200 flex items-center justify-center space-x-1">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Call</span>
+                    </a>
+                    <a href="mailto:ngo@example.com" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-3 rounded-lg text-sm font-medium transition duration-200 flex items-center justify-center space-x-1">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://wa.me/919876543210" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 px-3 rounded-lg text-sm font-medium transition duration-200 flex items-center justify-center space-x-1">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-teal-500 hover:shadow-xl transition duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Goa Food Bank</h3>
+                    <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Active</span>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">Fresh vegetables for weekly distribution</h4>
+                    <div class="space-y-2">
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-box text-teal-500 mr-3 w-4"></i>
+                            <span class="font-medium">Quantity & Type:</span>
+                            <span class="ml-2">50 kg / Vegetables & Fruits</span>
+                        </p>
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-clock text-orange-500 mr-3 w-4"></i>
+                            <span class="font-medium">Urgency:</span>
+                            <span class="ml-2">Required for next Monday's drive</span>
+                        </p>
+                        <p class="flex items-center text-gray-700">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 w-4"></i>
+                            <span class="font-medium">Location:</span>
+                            <span class="ml-2">Panjim, Goa</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex space-x-2">
+                    <a href="tel:0123456789" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 px-3 rounded-lg text-sm font-medium transition duration-200 flex items-center justify-center space-x-1">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Call</span>
+                    </a>
+                    <a href="mailto:ngo@example.com" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-3 rounded-lg text-sm font-medium transition duration-200 flex items-center justify-center space-x-1">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
